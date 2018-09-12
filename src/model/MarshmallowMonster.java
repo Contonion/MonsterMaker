@@ -20,6 +20,7 @@ public class MarshmallowMonster
 		this.name = name;
 	}
 	public MarshmallowMonster(String name, int legCount, int eyeCount, boolean hasNoses, int armCount)
+
 	{
 		this.name = name;
 		this.legCount = legCount;
@@ -29,6 +30,43 @@ public class MarshmallowMonster
 		
 	
 	}
+	
+	//Getters
+	public String getName() 
+	{
+		return name;
+	}
+	public int getLegCount() {
+		return legCount;
+	}
+	public int getEyeCount() 
+	{
+		return eyeCount;
+	}
+	public boolean getHasNoses() {
+		return hasNoses;
+	}
+	public int getArmCount() {
+		return armCount;
+	}
+    //Setters!
+	public void setName(String name) {
+		this.name = name;
+	}
+	public void setLegCount(int legCount) {
+		this.legCount = legCount;
+	}
+	public void getEyeCount(int eyeCount) {
+		this.eyeCount = eyeCount;
+	}
+	public void getHasNoses(boolean hasNoses) {
+		this.hasNoses = hasNoses;
+	}
+	public void getArmCount(int armCount) {
+		this.armCount = armCount;
+	}
+	
+	
 	public String toString()
 	{
 		String description = "My monsters name is " + name + "s/he/they has/have " + legCount + " legs, " + eyeCount + " eyes, " + hasNoses + " Noses, and has " + armCount + "arms" ;

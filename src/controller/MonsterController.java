@@ -1,6 +1,8 @@
 package controller;
 import model.MarshmallowMonster;
+import java.util.Scanner;
 
+import javax.swing.JOptionPane;
 public class MonsterController
 {
 	
@@ -8,20 +10,24 @@ public class MonsterController
 	private MarshmallowMonster myMonster;
 	private MarshmallowMonster userMonster;
 	//Constructor Section
+	public void start()
+	{
+		JOptionPane.showMessageDialog(null, "Show message here :)");
+		//Use this method instead of "System.out.println"
+		System.out.println("What shall your monsters name be?");
+		Scanner inputScanner = new Scanner(System.in);
+		String answer = inputScanner.nextLine();
+		JOptionPane.showMessageDialog(null, myMonster);
+		JOptionPane.showMessageDialog(null, userMonster);
+		
+	}
 	public MonsterController()
 	{
-		//Job 1: initialize data members!
 		myMonster = new MarshmallowMonster("Stephen", 3, 2, false, 2);
-		userMonster = new MarshmallowMonster("Jeff", 79, 55, true, 3);
+		userMonster = new MarshmallowMonster("Dave", 79, 55, true, 3);
 	}
 	
 	//methods section
-	public void start()
-	{
-		System.out.println(myMonster);
-		myMonster.setArmCount(1);
-		System.out.println("My monster has this many arms: " + myMonster.getArmCount());
-		System.out.print(userMonster);
-	}
+
 
 }

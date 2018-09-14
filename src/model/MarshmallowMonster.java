@@ -11,11 +11,11 @@ public class MarshmallowMonster
 	private boolean hasNoses;
 	private int armCount;
 	
-	private String username;
-	private int userLegCount;
-	private int userEyeCount;
-	private boolean userNoses;
-	private int userArmCount;
+	public String username;
+	public int userLegCount;
+	public int userEyeCount;
+	public boolean userNoses;
+	public int userArmCount;
 
 		//Default values are 0 or null :(
 	public MarshmallowMonster(String name, String username) 
@@ -52,20 +52,20 @@ public class MarshmallowMonster
 		return userArmCount;
 	}
     //Setters!
-	public void setName(String name) {
-		this.name = name;
+	public void SetUserName(String username) {
+		this.username = username;
 	}
-	public void setLegCount(int legs) {
-		this.legCount = legs;
+	public void setUserLegCount(int userLegCount) {
+		this.userLegCount = userLegCount;
 	}
-	public void setEyeCount(int eyes) {
-		this.eyeCount = eyes;
+	public void setUserEyeCount(int userEyes) {
+		this.userEyeCount = userEyes;
 	}
-	public void setHasNoses(boolean hasNoses) {
-		this.hasNoses = hasNoses;
+	public void setUserNoses(boolean userHasNoses) {
+		this.userNoses = userHasNoses;
 	}
-	public void setArmCount(int arms) {
-		this.armCount = arms;
+	public void setUserArmCount(int UserArms) {
+		this.userArmCount = UserArms;
 	}
 	public MarshmallowMonster(String name, int legCount, int eyeCount, boolean hasNoses, int armCount)
 

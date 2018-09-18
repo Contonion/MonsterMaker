@@ -1,7 +1,5 @@
 package controller;
 import model.MarshmallowMonster;
-import java.util.Scanner;
-
 import javax.swing.JOptionPane;
 public class MonsterController
 {
@@ -21,8 +19,8 @@ public class MonsterController
 		String userNumber = JOptionPane.showInputDialog(null, "How many arms?");
 		userMonster.SetUserName(userMonsterName);
 		JOptionPane.showMessageDialog(null, myMonster);
-		JOptionPane.showMessageDialog(null, "Your monster is named" + userMonster.userGetName());
-		JOptionPane.showMessageDialog(null, "your monster has" + userNumber + "Arms");
+		JOptionPane.showMessageDialog(null, "Your monster is named " + userMonster.userGetName() + " and they have" + userNumber + " Arms");
+		JOptionPane.showMessageDialog(null, "your monster has" + userNumber + " Arms");
 		//userMonster.SetUserName(answer);
 		if (validInt(userNumber))
 		{
